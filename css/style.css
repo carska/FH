@@ -1,0 +1,291 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2018-feb-21, 18:38:21
+    Author     : carlskanshed
+*/
+body {
+    font-family: Lucida Grande;
+
+}
+p {
+    font-size: 10px;
+}
+h1 {
+    padding-top: 1em;
+}
+h2 {
+    color: gray;
+    font-weight: lighter;
+    padding-bottom: 2em;
+}
+h3 {
+    font-size: 16px;
+}
+label {
+    float: left;
+}
+textarea {
+    resize: none;
+}
+.header {
+    text-align: center;
+    align-content: center;
+    background-color: white;
+}
+.container {
+    max-width: 940px;
+    margin: auto;
+    text-align: center;
+}
+.footerContainer {
+    position: relative;
+}
+.footerContainer h1 {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5vw;
+    color: white;
+    text-align: center;
+}
+.logo {
+    float:left;
+    display:block;
+    
+}
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
+
+}
+.navbar li {
+    float: right;
+}
+.navbar li a {
+    display: block;
+    text-align: center;
+    padding: 4em 0.5em 1em;
+    border-radius: 0px 0px 0.5em 0.5em;
+    text-decoration: none;
+    color: black;
+}
+.navbar li a.active {
+    color: white;
+    background-color: #ea4f3d;
+}
+.navbar li a:active {
+    color: white;
+    background-color: #ea4f3d;
+}
+.infoText {
+    margin: 5%;
+}
+.infoHead {
+    border-radius: 0.4em 0.4em 0px 0px;
+    padding: 0.5em;
+    padding-left: 1em;
+    background-color: #ea4f3d;
+    color: white;
+    text-align: left;
+    margin-bottom: 2px;
+    font-size: 10px;
+}
+.infoRow {
+    display: inline-block;
+    background: #eeeeee;
+    width: 100%;
+    height: 2.3em;
+}
+.infoRow p {
+    margin: 0px;
+}
+
+.infoRow img {
+    margin: 0px;
+    vertical-align: top;
+    height: 1.5em;
+    padding: 0px;
+}
+.rowPartOne {
+    text-align: left;
+    color: #888888;
+
+    padding: 0.5em;
+    padding-left: 1em;
+    float: left;
+    font-size: 12px;
+}
+.rowPartTwo {
+    text-align: right;
+
+    padding: 0.5em;
+    padding-right: 1em;
+    float: right;
+}
+.rowPartOne a {
+    vertical-align: middle;
+    text-decoration: none;
+    color: gray;
+}
+.rowPartOne a:hover {
+    color: #ea4f3d;
+}
+.backgroundImage {
+    padding: 1em 0em; 
+    width: 100%;
+}
+.line {
+    margin-top: 1%;
+    border: groove lightgray;
+    border-width: 1px;
+}
+.lineTwo {
+    margin-top: 4%;
+    border: groove lightgray;
+    border-width: 1px;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Position the image container */
+.slideContainer {
+    position: relative;
+}
+
+/* Hide the images by default */
+.slides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+    width: 100%;
+}
+
+.sliderRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* 5 columns side by side */
+.sliderColumn {
+    float: left;
+    width: 20%;
+    padding:1%
+}
+.inputField {
+    width: 100%;
+    height: 2.2em;
+    border: 1px solid lightgray;
+    border-radius: 0.4em;
+}
+.formRadio {
+    vertical-align: top;
+}
+.formComment {
+    width: 100%;
+    height: 7em;
+}
+.formButton {
+    margin-top: 2%;
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 10%;
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+    border: none;
+    background-color: #ea4f3d;
+    color: white;
+}
+.column {
+    display: flex;
+}
+.left-half {
+    flex: 1;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+.right-half {
+    flex: 1;
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
+.half {
+    width: 100%;
+    flex: 1;
+    float:left;
+    text-align: left;
+}
+.half h2 {
+    margin-top: 0.5em;
+    color: black;
+    font-weight: bold;
+    padding-bottom: 1px;
+}
+.half p {
+}
+.half a {
+    text-decoration: none;
+    color: black;
+}
+.half a:hover {
+    color: #ea4f3d;
+}
+.footerLogo {
+    float: right;
+    margin-top: 0.5em;
+    padding-bottom: 2em;
+}
+.facebook {
+    float: left;
+    width: 100%;
+}
+.copyright {
+    float: right;
+    width: 100%;
+    text-align: justify;
+    padding-bottom: 1em;
+}
+@media screen and (max-width: 600px){
+    .navbar li {
+        float: none;
+    }
+    .navbar li a {
+        display: block;
+        text-align: center;
+        padding: 1em 1em 1em;
+        border-radius: 0px;
+        text-decoration: none;
+    }
+    .logo {
+        float:none;
+    }
+    .column {
+        display:block;
+    }
+    .left-half {
+        padding-right: 0em;
+    }
+    .right-half {
+        padding-left: 0em;
+    }
+    .copyright {
+        float: left;
+    }
+    .footerLogo {
+        float: none;
+        
+    }
+    .facebook {
+        width: 100%;
+        padding-bottom: 1em;
+    }
+}
